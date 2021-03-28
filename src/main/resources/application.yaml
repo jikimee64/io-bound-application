@@ -13,7 +13,7 @@ spring:
   rabbitmq:
     #host: localhost
     # push할 때는 rabbitmq가 설치된 인스턴스 IP로 세팅
-    host: 10.128.0.6
+    host: 10.178.0.12
     username: guest
     password: guest
     port: 5672
