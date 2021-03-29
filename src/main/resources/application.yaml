@@ -1,15 +1,4 @@
 spring:
-  datasource:
-    # url: jdbc:postgresql://localhost:5432/postgresql
-    # push할 때는 postgresql이 설치된 인스턴스 IP로 세팅
-    url: jdbc:postgresql://10.140.0.2:5432/postgresql
-    username: postgresql
-    password: postgrespassword
-  jpa:
-    show-sql: false
-    hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-      ddl-auto: update
   rabbitmq:
     #host: localhost
     # push할 때는 rabbitmq가 설치된 인스턴스 IP로 세팅
@@ -17,3 +6,7 @@ spring:
     username: guest
     password: guest
     port: 5672
+  data:
+    elasticsearch:
+      hosts: 10.146.0.4,10.146.0.8,10.146.0.6,10.146.0.7
+      port: 9200
