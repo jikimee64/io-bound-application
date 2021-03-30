@@ -20,5 +20,4 @@ public class Consumer {
         Post post = objectMapper.readValue(message, Post.class);
         postRepository.save(post);
     }
-
 }

@@ -10,7 +10,7 @@ public class Producer {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    public void sendTo(String message){
+    public void sendTo(String message) {
         this.rabbitTemplate.convertAndSend("CREATE_POST_QUEUE", message);
     }
 
